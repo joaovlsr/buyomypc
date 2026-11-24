@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-primary: #315C45;
+    --color-secondary: #6F9278;
+    --color-soft-green: #E5EEE6;
+    --color-background: #F6F7F3;
+    --color-text: #202521;
+    --color-surface: #FFFFFF;
+    --color-border: #DCE4DD;
+
+    --font-heading: 'Montserrat', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-technical: 'DM Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+      color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html.dark body {
+    background-color: #121613;
+    color: #EEF2EE;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-heading);
+  }
+
+  .font-mono, code, pre {
+    font-family: var(--font-technical);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

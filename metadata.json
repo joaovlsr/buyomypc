@@ -1,0 +1,8 @@
+{
+  "name": "BuyoMYPC",
+  "description": "Planejador técnico de montagem e upgrade de computadores com verificação de compatibilidade, cálculo de fonte, análise de gargalo e recomendação inteligente de hardware.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
